@@ -7,6 +7,7 @@ import jakarta.persistence.Id
 import lombok.Getter
 import lombok.Setter
 import org.hibernate.annotations.CreationTimestamp
+import java.time.LocalDate
 import java.time.LocalDateTime
 import java.util.UUID
 
@@ -19,7 +20,7 @@ class User(
     @Column(name= "password_hash")
     val password: String,
     @Column(name = "birth_date")
-    val birthDate: LocalDateTime,
+    val birthDate: LocalDate,
     @Column(name = "document_number",unique = true)
     val documentNumber: String
 ) {
