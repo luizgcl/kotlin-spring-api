@@ -1,6 +1,7 @@
 package br.com.luizgcl.pedeai.user
 
 import jakarta.persistence.Column
+import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
@@ -11,6 +12,7 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 import java.util.UUID
 
+@Entity
 @Getter
 @Setter
 class User(
